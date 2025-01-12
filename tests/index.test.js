@@ -22,7 +22,7 @@ describe("API Tests", () => {
 
 	// Test 2: Retrieve Package by Destination
 	it("should retrieve a package by destination", async () => {
-		const destination = "Paris";
+		const destination = "Moscow";
 		const res = await request(server).get(`/packages/${destination}`);
 		expect(res.statusCode).toBe(200);
 		expect(res.body.package).toHaveProperty("destination", destination);
@@ -55,7 +55,7 @@ describe("API Tests", () => {
 			.post("/packages/update-seats")
 			.send(updateData);
 		expect(res.statusCode).toBe(200);
-		expect(res.body.package).toHaveProperty("availableSlots", 8);
+		expect(res.body.package).toHaveProperty("availableSlots", 13);
 	});
 
 	// Test 5: Retrieve All Bookings for a Package

@@ -1,10 +1,10 @@
 let travelPackages = [
 	{
 		packageId: 1,
-		destination: "Paris",
-		price: 1500,
-		duration: 7,
-		availableSlots: 10,
+		destination: "Moscow",
+		price: 6000,
+		duration: 10,
+		availableSlots: 15,
 	},
 	{
 		packageId: 2,
